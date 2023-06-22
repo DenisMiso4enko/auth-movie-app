@@ -17,11 +17,6 @@ app.use(
     origin: "https://movie-app-wine-pi.vercel.app", // добавить адрес домена
   })
 );
-// app.use(router);
-
-// router.get("/", (req, res, next) => {
-//   res.send("Hello World!");
-// });
 
 app.post("/register", async (req, res) => {
   try {
