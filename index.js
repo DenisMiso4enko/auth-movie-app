@@ -17,8 +17,9 @@ app.use(
     origin: "http://localhost:5173", // добавить адрес домена
   })
 );
+app.use(router);
 
-app.get("/", (res, req) => {
+router.get("/", (req, res, next) => {
   res.send("Hello World!");
 });
 
