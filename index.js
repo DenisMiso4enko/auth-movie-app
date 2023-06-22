@@ -17,11 +17,11 @@ app.use(
     origin: "http://localhost:5173", // добавить адрес домена
   })
 );
-app.use(router);
+// app.use(router);
 
-router.get("/", (req, res, next) => {
-  res.send("Hello World!");
-});
+// router.get("/", (req, res, next) => {
+//   res.send("Hello World!");
+// });
 
 app.post("/register", async (req, res) => {
   try {
