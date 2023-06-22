@@ -18,6 +18,10 @@ app.use(
   })
 );
 
+app.get("/", (res, req) => {
+  res.send("Hello World!");
+});
+
 app.post("/register", async (req, res) => {
   try {
     const { username, email, password } = req.body;
