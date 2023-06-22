@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173", // добавить адрес домена
+    origin: "https://movie-app-wine-pi.vercel.app", // добавить адрес домена
   })
 );
 // app.use(router);
